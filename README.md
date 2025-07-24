@@ -38,5 +38,4 @@ Requirements:
 
 - `GET /nodes` — get all nodes (artists, songs, genres)
 
-GET /nodes — get all nodes (artists, songs, genres)
 
