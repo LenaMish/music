@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from neo4j import GraphDatabase
 
-from app.routers import user, song, artist, genre, relationships
+from app.routers import user, song, artist, genre, relationships, grouped_nodes
 
 app = FastAPI()
 
@@ -13,6 +13,7 @@ app.include_router(song.router)
 app.include_router(artist.router)
 app.include_router(genre.router)
 app.include_router(relationships.router)
+app.include_router(grouped_nodes.router)
 
 @app.get("/")
 def route():
